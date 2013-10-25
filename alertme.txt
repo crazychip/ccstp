@@ -1,0 +1,7 @@
+Hey!
+It't that time again.... time to take over THE WORLD!.... of responsibility and manage some servers.
+
+[ ] Remeber that BSDNOW is on the live feed tonight.
+[ ] Check the server periodic emails.
+[ ] Commit any reported freebsd-update from the cron job.
+

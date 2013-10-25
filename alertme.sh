@@ -5,6 +5,6 @@
 
 TO="user@host.com"
 SUBJECT="Reminder!"
-CONTENT="/home/user/alertme.html"
+CONTENT="/home/user/alertme.txt"
 
 cat $CONTENT | mail -s "$SUBJECT" $TO
