@@ -20,3 +20,8 @@ backup_world.sh
 ---------------
 backup_world.sh is a minecraft world backup script. It sends commands to the java ui runnning in screen
 and makes timestamed tar.gz files in a backup directory.
+
+blacklist.sh
+-----------
+blacklist.sh adds the listed IP's to the persist file for pf and also
+adds them to the current running table.
