@@ -8,15 +8,16 @@
 date_formatted=$(date +%d_%m_%Y-%H.%M.%S)
 # path to screen
 screen="/usr/local/bin/screen"
+screenbreak=$'\012'
 
 $screen -p 0 -S server -X stuff 'save-all'
-$screen -p 0 -S server -X stuff $'\012' 
+$screen -p 0 -S server -X stuff $screenbreak 
 sleep 10
 $screen -p 0 -S server -X stuff 'save-off'
-$screen -p 0 -S server -X stuff $'\012'
+$screen -p 0 -S server -X stuff $screenbreak
 sleep 5
 tar -czf /home/minecraft/backup/world."$date_formatted".tar.gz /home/minecraft/world
 sleep 30
 $screen -p 0 -S server -X stuff 'save-on'
-$screen -p 0 -S server -X stuff $'\012'
+$screen -p 0 -S server -X stuff $screenbreak
 
