@@ -15,7 +15,7 @@ sleep 10
 $screen -p 0 -S server -X stuff 'save-off'
 $screen -p 0 -S server -X stuff $'\012'
 sleep 5
-tar -czf /home/minecraft/backup/world.$date_formatted.tar.gz /home/minecraft/world
+tar -czf /home/minecraft/backup/world."$date_formatted".tar.gz /home/minecraft/world
 sleep 30
 $screen -p 0 -S server -X stuff 'save-on'
 $screen -p 0 -S server -X stuff $'\012'
