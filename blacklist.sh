@@ -6,9 +6,9 @@
 PFCTL="/sbin/pfctl"
 blacklist="/etc/pf.blacklist"
 
-for arg in $@
+for arg in "$@"
 do
 echo $arg >> $blacklist
-pfctl -t blacklist -T add $arg
+$PFCTL -t blacklist -T add $arg
 done
 
